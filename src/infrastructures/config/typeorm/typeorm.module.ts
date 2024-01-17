@@ -8,11 +8,11 @@ export const getTypeOrmModuleOptions = (
 ): TypeOrmModuleOptions =>
   ({
     type: 'postgres',
-    host: config.getDatabaseHost(),
-    port: config.getDatabasePort(),
-    username: config.getDatabaseUser(),
-    password: config.getDatabasePassword(),
-    database: config.getDatabaseName(),
+    host: 'localhost',
+    port: 5432,
+    username: 'postgres',
+    password: 'mary1377',
+    database: 'clean_arch',
     entities: [__dirname + './../../**/*.entity{.ts,.js}'],
     autoLoadEntities: true,
     synchronize: false,
